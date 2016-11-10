@@ -97,9 +97,7 @@ Rails.application.routes.draw do
     post   'login'   => 'sessions#create'
     delete 'logout'  => 'sessions#destroy'
     
-    get   'appointments' => 'appointments#index'
-    get   'edit_appointment' => 'appointments#edit'
-    get   'new_appointment'  => 'appointments#new'
+    
     
     get    'userappointment' => 'users#appointment'
     get    'confirmappointment' => 'users#confirmappointment'
