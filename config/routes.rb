@@ -111,7 +111,8 @@ Rails.application.routes.draw do
     get 'office_page' => 'users#office_page'
     get 'patient_page' => 'users#patient_page'
 
-     get    'createaccount'  => 'users#createaccountDocOff'
+    get    'createaccount'  => 'admins#new'
+     
 
     resources :users
     resources :account_activations, only: [:edit]
